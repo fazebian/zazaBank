@@ -11,7 +11,6 @@ public class ZazaBankApplication {
 		SpringApplication.run(ZazaBankApplication.class, args);
 	}
 
-
 	@Bean
 	public Compte singletonCompte(){
 		return new Compte();
