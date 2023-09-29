@@ -11,8 +11,12 @@ public class CompteController {
     public String viewBalance(Model model) {
 
         var compte = new Compte();
-        model.addAttribute("balance", compte.balance());
+
+        model.addAttribute("balance", formattageDeMoney(compte.balance()));
 
         return "compte-balance";
+    }
+    public String formattageDeMoney(int montant){
+        return "0 ar";
     }
 }
